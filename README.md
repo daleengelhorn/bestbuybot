@@ -1,5 +1,5 @@
 # bestbuybot
-Bot to buy the RTX 3080 on bestbuy.com
+Bot to buy the RTX 3080 (or anything) on bestbuy.com
 
 Need to add a python file called info.py and add string variables like:
 email="test@gmail.com"
