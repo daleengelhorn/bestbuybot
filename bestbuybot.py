@@ -5,12 +5,12 @@ from selenium.webdriver.support import expected_conditions as EC
 
 import info
 
-RTX3080 = "https://www.bestbuy.com/site/gigabyte-geforce-rtx-3080-aorus-master-10g-gddr6x-pci-express-4-0-graphics-card-black/6436223.p?skuId=6436223"
+item = "https://www.bestbuy.com/site/gigabyte-geforce-rtx-3080-aorus-master-10g-gddr6x-pci-express-4-0-graphics-card-black/6436223.p?skuId=6436223"
 
 options = webdriver.ChromeOptions()
 driver= webdriver.Chrome()
 driver.maximize_window()
-driver.get(RTX3080);
+driver.get(item);
 complete = False
 
 while not complete:
@@ -58,7 +58,7 @@ while not complete:
         
         complete = True
     except:
-        driver.get(RTX3080)
+        driver.get(item)
         print("Error - restarting")
         continue
 
